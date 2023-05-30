@@ -20,17 +20,17 @@ int main(void)
     root->left->left = binary_tree_node(root->left, 10);
     root->right->left = binary_tree_node(root->right, 10);
 
-    treeprint(root);
+    treeprint(root, 0);
     perfect = binary_tree_is_perfect(root);
     printf("Perfect: %d\n\n", perfect);
 
     root->right->right->left = binary_tree_node(root->right->right, 10);
-    treeprint(root);
+    treeprint(root, 0);
     perfect = binary_tree_is_perfect(root);
     printf("Perfect: %d\n\n", perfect);
 
     root->right->right->right = binary_tree_node(root->right->right, 10);
-    treeprint(root);
+    treeprint(root, 0);
     perfect = binary_tree_is_perfect(root);
     printf("Perfect: %d\n", perfect);
     return (0);
