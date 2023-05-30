@@ -19,6 +19,6 @@ int main(void)
 	root->right->left = binary_tree_node(root->right, 256);
 	root->right->right = binary_tree_node(root->right, 512);
 
-	treeprint(root);
+	treeprint(root, 0);
 	return (0);
 }
