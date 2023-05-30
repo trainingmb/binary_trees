@@ -51,7 +51,7 @@ int poow(int a, int b)
 	int result;
 
 	result = 1;
-	while(b)
+	while (b)
 	{
 		result = result * a;
 		b--;
