@@ -11,7 +11,7 @@
  * @func: the Operating function
  * Return: Void
  */
-void level_print(const binary_tree_t *tree,size_t current_lvl, 
+void level_print(const binary_tree_t *tree, size_t current_lvl,
 				size_t target_lvl, void (*func)(int))
 {
 	if (!tree)
@@ -50,7 +50,14 @@ size_t bth(const binary_tree_t *tree)
 	return (0);
 }
 
-
+/**
+ * binary_tree_levelorder - goes through a binary tree using level-order
+ * traversal
+ * @tree: a pointer to the root node of the tree to traverse
+ * @func: a pointer to a function to call for each node. The value in
+ * the node must be passed as a parameter to this function
+ * Return: Void
+ */
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t height, iter;
