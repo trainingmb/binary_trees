@@ -48,6 +48,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
-	return (bi_th(tree->left) -
-			bi_th(tree->right));
+	return (bth(tree->left) -
+			bth(tree->right));
 }
