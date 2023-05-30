@@ -41,7 +41,7 @@ int leaves(const binary_tree_t *tree)
 }
 
 /**
- * poow: Raise a to power b
+ * poow - Raise a to power b
  * @a: A
  * @b: B
  * Return: a**b;
