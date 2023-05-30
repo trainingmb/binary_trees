@@ -11,11 +11,12 @@ size_t bth(const binary_tree_t *tree)
 {
 	size_t l;
 	size_t r;
+
 	if (tree)
 	{
 		r = bth(tree->right);
 		l = bth(tree->left);
-		return ((r > l? r : l) + 1);
+		return ((r > l ? r : l) + 1);
 	}
 	return (0);
 }
