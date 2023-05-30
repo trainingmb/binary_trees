@@ -17,7 +17,7 @@ int main(void)
     root->right = binary_tree_node(root, 402);
     binary_tree_insert_right(root->left, 54);
     binary_tree_insert_right(root, 128);
-    treeprint(root);
+    treeprint(root, 0);
 
     height = binary_tree_height(root);
     printf("Height from %d: %lu\n", root->n, height);
