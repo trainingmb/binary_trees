@@ -36,8 +36,8 @@ int leaves(const binary_tree_t *tree)
 	{
 		return (1);
 	}
-	return (binary_tree_leaves(tree->left) +
-			binary_tree_leaves(tree->right));
+	return (leaves(tree->left) +
+			leaves(tree->right));
 }
 
 /**
