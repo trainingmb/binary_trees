@@ -55,7 +55,7 @@ int poow(int a, int b)
 	{
 		result *= a;
 	}
-	return (result)
+	return (result);
 }
 
 
