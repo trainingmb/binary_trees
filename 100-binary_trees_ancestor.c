@@ -9,7 +9,7 @@
  */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
 {
-	binary_tree_t *ph1, ph2;
+	binary_tree_t *ph1, *ph2;
 
 	if (!first || !second)
 		return (NULL);
