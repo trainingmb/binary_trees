@@ -24,20 +24,6 @@ int bth(const binary_tree_t *tree)
 
 
 /**
- * bi_th - Measures the height of a binary tree
- * @tree: the tree to measure
- * Return: The Height of the tree or NULL
- */
-int bi_th(const binary_tree_t *tree)
-{
-	int h;
-
-	h = bth(tree);
-	return (h == 0 ? 0 : h - 1);
-}
-
-
-/**
  * binary_tree_balance - measures the balance
  * factor of a binary tree
  * @tree: pointer to the root node of the tree to
