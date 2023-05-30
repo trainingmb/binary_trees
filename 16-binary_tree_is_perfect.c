@@ -53,7 +53,7 @@ int poow(int a, int b)
 	result = 1;
 	while(b)
 	{
-		result *= a;
+		result = result * a;
 	}
 	return (result);
 }
