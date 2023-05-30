@@ -69,13 +69,11 @@ int poow(int a, int b)
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-	int lvs;
-	int height;
-
 	if (!tree)
 		return (0);
-	lvs = leaves(tree);
-	height = bth(tree) - 1;
-
-	return (lvs == poow(2, height));
+	if (!tree->left && !tree->right)
+		return (1);
+	return (binary_tree_is_perfect(tree->left) &&
+			binary_tree_is_perfect(tree->right) &&
+			bth(tree->left) == bth(tree->right));
 }
