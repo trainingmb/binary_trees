@@ -2,7 +2,7 @@
 
 
 /**
- * binary_tree_preorder:goes through a binary
+ * binary_tree_preorder - goes through a binary
  * tree using pre-order traversal
  * @tree: the tree to transverse
  * @func: the printing function
