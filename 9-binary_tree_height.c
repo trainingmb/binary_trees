@@ -28,6 +28,9 @@ size_t bth(const binary_tree_t *tree)
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	return (bth(tree) - 1);
+	size_t h;
+
+	h = bth(tree);
+	return (h == 0 ? 0 : h - 1);
 }
 
