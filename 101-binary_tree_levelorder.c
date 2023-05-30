@@ -1,7 +1,17 @@
 #include "binary_trees.h"
 
-
-void level_print(const binary_tree_t *tree,size_t current_lvl,
+/**
+ * level_print - Operants func() on the n values og
+ * all nodes in tree at level target_level from the most
+ * left to most right
+ * @tree:  Pointer to the tree
+ * @current_lvl: Track Current level
+ * @target_lvl: The level we are targeting
+ * in the tree
+ * @func: the Operating function
+ * Return: Void
+ */
+void level_print(const binary_tree_t *tree,size_t current_lvl, 
 				size_t target_lvl, void (*func)(int))
 {
 	if (!tree)
